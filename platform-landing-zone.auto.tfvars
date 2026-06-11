@@ -41,7 +41,7 @@ custom_replacements = {
     # Resource provisioning primary connectivity
     primary_firewall_enabled                              = true
     primary_firewall_sku_tier                             = "Premium"
-    primary_firewall_zones                                = [1, 2, 3]
+    primary_firewall_zones                                = ["1", "2", "3"]
     primary_virtual_network_gateway_express_route_enabled = false
     primary_virtual_network_gateway_vpn_enabled           = false
     primary_private_dns_zones_enabled                     = true
