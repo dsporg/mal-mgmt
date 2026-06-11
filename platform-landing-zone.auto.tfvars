@@ -157,7 +157,7 @@ This variable can be used to apply tags to all resources that support it. Some r
 */
 tags = {
   ManagedBy = "Terraform"
-  Source      = "Azure Landing Zones Accelerator"
+  Source    = "Azure Landing Zones Accelerator"
 }
 
 /*
