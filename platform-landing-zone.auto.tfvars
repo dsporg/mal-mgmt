@@ -53,7 +53,7 @@ custom_replacements = {
     # Resource provisioning secondary connectivity
     secondary_firewall_enabled                              = true
     secondary_firewall_sku_tier                             = "Premium"
-    secondary_firewall_zones                                = [""]
+    secondary_firewall_zones                                = null
     secondary_virtual_network_gateway_express_route_enabled = false
     secondary_virtual_network_gateway_vpn_enabled           = false
     secondary_private_dns_zones_enabled                     = true
