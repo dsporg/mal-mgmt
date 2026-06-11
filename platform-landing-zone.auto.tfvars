@@ -41,7 +41,7 @@ custom_replacements = {
     # Resource provisioning primary connectivity
     primary_firewall_enabled                              = true
     primary_firewall_sku_tier                             = "Premium"
-    primary_firewall_zones                                = "1, 2, 3"
+    primary_firewall_zones                                = [1, 2, 3]
     primary_virtual_network_gateway_express_route_enabled = false
     primary_virtual_network_gateway_vpn_enabled           = false
     primary_private_dns_zones_enabled                     = true
@@ -53,7 +53,7 @@ custom_replacements = {
     # Resource provisioning secondary connectivity
     secondary_firewall_enabled                              = true
     secondary_firewall_sku_tier                             = "Premium"
-    secondary_firewall_zones                                = ""
+    secondary_firewall_zones                                = []
     secondary_virtual_network_gateway_express_route_enabled = false
     secondary_virtual_network_gateway_vpn_enabled           = false
     secondary_private_dns_zones_enabled                     = true
@@ -366,7 +366,7 @@ virtual_hubs = {
     firewall = {
       name     = "$${primary_firewall_name}"
       sku_tier = "$${primary_firewall_sku_tier}"
-      zones    = ["$${primary_firewall_zones}"]
+      zones    = primary_firewall_zones
     }
     firewall_policy = {
       name = "$${primary_firewall_policy_name}"
@@ -433,7 +433,7 @@ virtual_hubs = {
     firewall = {
       name     = "$${secondary_firewall_name}"
       sku_tier = "$${secondary_firewall_sku_tier}"
-      zones    = ["$${secondary_firewall_zones}"]
+      zones    = secondary_firewall_zones
     }
     firewall_policy = {
       name = "$${secondary_firewall_policy_name}"
