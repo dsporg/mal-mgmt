@@ -1,0 +1,74 @@
+"management_groups":
+- "archetypes":
+  - "root_custom"
+  "display_name": "Azure Landing Zones"
+  "exists": true
+  "id": "mg-mal"
+  "parent_id": null
+- "archetypes":
+  - "platform_custom"
+  "display_name": "Platform"
+  "exists": false
+  "id": "mg-mal-platform"
+  "parent_id": "mg-mal"
+- "archetypes":
+  - "landing_zones_custom"
+  "display_name": "Landing Zones"
+  "exists": false
+  "id": "mg-mal-landingzones"
+  "parent_id": "mg-mal"
+- "archetypes":
+  - "corp_custom"
+  "display_name": "Corp"
+  "exists": false
+  "id": "mg-mal-corp"
+  "parent_id": "mg-mal-landingzones"
+- "archetypes":
+  - "online_custom"
+  "display_name": "Online"
+  "exists": false
+  "id": "mg-mal-online"
+  "parent_id": "mg-mal-landingzones"
+- "archetypes":
+  - "local_custom"
+  "display_name": "Local"
+  "exists": false
+  "id": "mg-mal-local"
+  "parent_id": "mg-mal-landingzones"
+- "archetypes":
+  - "sandbox_custom"
+  "display_name": "Sandbox"
+  "exists": false
+  "id": "mg-mal-sandbox"
+  "parent_id": "mg-mal"
+- "archetypes":
+  - "security_custom"
+  "display_name": "Security"
+  "exists": false
+  "id": "mg-mal-security"
+  "parent_id": "mg-mal-platform"
+- "archetypes":
+  - "management_custom"
+  "display_name": "Management"
+  "exists": false
+  "id": "mg-mal-management"
+  "parent_id": "mg-mal-platform"
+- "archetypes":
+  - "connectivity_custom"
+  "display_name": "Connectivity"
+  "exists": false
+  "id": "mg-mal-connectivity"
+  "parent_id": "mg-mal-platform"
+- "archetypes":
+  - "identity_custom"
+  "display_name": "Identity"
+  "exists": false
+  "id": "mg-mal-identity"
+  "parent_id": "mg-mal-platform"
+- "archetypes":
+  - "decommissioned_custom"
+  "display_name": "Decommissioned"
+  "exists": false
+  "id": "mg-mal-decommissioned"
+  "parent_id": "mg-mal"
+"name": "alz_custom"
