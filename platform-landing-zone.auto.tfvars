@@ -46,7 +46,7 @@ custom_replacements = {
     primary_private_dns_zones_enabled                     = true
     primary_private_dns_auto_registration_zone_enabled    = true
     primary_private_dns_resolver_enabled                  = true
-    primary_bastion_enabled                               = true
+    primary_bastion_enabled                               = false
     primary_sidecar_virtual_network_enabled               = true
 
     # Resource provisioning secondary connectivity
@@ -57,7 +57,7 @@ custom_replacements = {
     secondary_private_dns_zones_enabled                     = true
     secondary_private_dns_auto_registration_zone_enabled    = true
     secondary_private_dns_resolver_enabled                  = true
-    secondary_bastion_enabled                               = true
+    secondary_bastion_enabled                               = false
     secondary_sidecar_virtual_network_enabled               = true
 
     # Resource group names
@@ -431,7 +431,7 @@ virtual_hubs = {
     firewall = {
       name     = "$${secondary_firewall_name}"
       sku_tier = "$${secondary_firewall_sku_tier}"
-      zones    = null
+      zones    = []
     }
     firewall_policy = {
       name = "$${secondary_firewall_policy_name}"
