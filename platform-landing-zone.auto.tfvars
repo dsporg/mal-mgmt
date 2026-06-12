@@ -45,8 +45,8 @@ custom_replacements = {
     primary_virtual_network_gateway_vpn_enabled           = false
     primary_private_dns_zones_enabled                     = true
     primary_private_dns_auto_registration_zone_enabled    = true
-    primary_private_dns_resolver_enabled                  = true
-    primary_bastion_enabled                               = false
+    primary_private_dns_resolver_enabled                  = false
+    primary_bastion_enabled                               = true
     primary_sidecar_virtual_network_enabled               = true
 
     # Resource provisioning secondary connectivity
@@ -56,7 +56,7 @@ custom_replacements = {
     secondary_virtual_network_gateway_vpn_enabled           = false
     secondary_private_dns_zones_enabled                     = true
     secondary_private_dns_auto_registration_zone_enabled    = true
-    secondary_private_dns_resolver_enabled                  = true
+    secondary_private_dns_resolver_enabled                  = false
     secondary_bastion_enabled                               = false
     secondary_sidecar_virtual_network_enabled               = true
 
